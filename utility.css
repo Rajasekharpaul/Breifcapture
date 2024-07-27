@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.margin-m1 {
+    margin: 40px 0px;
+}
+
+h1 {
+    font-size: 67px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+h3 {
+    font-size: 37px;
+    font-family: "Roboto", sans-serif;
+}
+
+h4 {
+    font-size: 28px;
+    font-family: "Roboto",sans-serif;
+}
+
+h5 {
+    font-size: 21px;
+    font-family: "Aghita", sans-serif;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.scroll-container {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.light-theme::-webkit-scrollbar , .dark-theme::-webkit-scrollbar {
+    width: 8px;
+}
+
+.light-theme::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.light-theme::-webkit-scrollbar-thumb:hover , .dark-theme::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.dark-theme::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background: #777;
+}

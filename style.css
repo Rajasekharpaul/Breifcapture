@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.dark-theme {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+#image-viewer.light-theme {
+    background-color: white;
+    color: black;
+}
+
+#image-viewer.dark-theme {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+#viewer-dwn.light-theme {
+    filter: invert(1);
+}
+
+#viewer-dwn.dark-theme {
+    filter: invert(0);
+}
+
+#Search.light-theme {
+    filter: invert(1);
+}
+
+#Search.dark-theme {
+    filter: invert(0);
+}
+
+#lightIcon {
+    display: none;
+}
+
+body.light-theme #lightIcon {
+    display: inline;
+}
+
+body.dark-theme #darkIcon {
+    display: inline;
+}
+
+body.light-theme #darkIcon {
+    display: none;
+}
+
+body.dark-theme #lightIcon {
+    display: none;
+}
+
+#hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .navigation .logo h5 {
+    font-weight: 300;
+}
+
+#hero .navigation {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+}
+
+#hero .navigation .logo {
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+}
+
+#hero .navigation .navbar a {
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+#hero .navigation .navbar a:hover {
+    font-weight: 700;
+}
+
+#hero .navigation button {
+    margin-left: 40px;
+}
+
+#hero .navigation button:hover {
+    color: black;
+    background-color: white;
+}
+
+#hero .navigation .theme {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.theme i {
+    font-size: 20px;
+}
+
+#hero .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.headings h1 {
+    font-size: 100px;
+    color: white;
+    text-transform: capitalize;
+    font-family: "Aghita", sans-serif;
+}
+
+.headings h5 {
+    font-family: "Roboto", sans-serif;
+}
+
+#Search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#Search .Search-box {
+    position: relative;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#Search .Search-box form input {
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.Search-box form input::placeholder {
+    color: white;
+}
+
+#Search .Search-box form button {
+    border: none;
+    outline: none;
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size: 20px;
+}
+
+#Search .trending {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Search .trending a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 20px;
+}
+
+#Search .trending a:hover {
+    font-weight: 600;
+}
+
+#Explore {
+    max-width: 1500px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+#Explore .title {
+    margin-bottom: 40px;
+}
+
+#Explore .photogallery {
+    display: flex;
+    gap: 15px;
+}
+
+#Explore .photogallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    width: 100px;
+    height: 40px;
+}
+
+.overlay button a {
+    color: white;
+    text-decoration: none;
+}
+
+.overlay .user {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    left: 25px;
+    display: flex;
+    width: 115px;
+    height: 40px;
+}
+
+.overlay .user i {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 10px;
+    color: white;
+}
+
+.overlay .user h6 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+#bg {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 180px;
+    top: 60px;
+    width: 75vw;
+    height: 90vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#image-viewer .nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 25px;
+}
+
+#image-viewer .nav button {
+    width: 100px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#image-viewer .nav button a {
+    color: rgb(32, 32, 32);
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    display: block;
+    width: auto;
+    height: 80%;
+}
+
+#prev {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#close:hover,
+#prev:hover,
+#next:hover {
+    color: grey;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    padding: 30px 15px;
+    margin-bottom: 40px;
+}
+
+footer .logo-about {
+    color: white;
+    width: 20vw;
+    padding: 20px;
+}
+
+footer .logo-about p {
+    color: rgb(148, 148, 148);
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+footer .columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin-left: 60px;
+}
+
+footer .columns .column ul {
+    list-style: none;
+}
+
+footer .columns .column ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+footer .columns .column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .columns .button-column button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer .columns .button-column button:hover {
+    color: black;
+    background-color: white;
+}
+
+footer .columns .logo-column {
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+footer .columns .logo-column i {
+    cursor: pointer;
+}
+
+#webpages {
+    display: none;
+    justify-content: center;
+    padding: 40px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#login-close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-close:hover {
+    color: grey;
+}
+
+#login-page {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 40px;
+    width: 400px;
+    height: 500px;
+}
+
+#login-page h3,
+p {
+    color: black;
+}
+
+#login-page form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#login-page form input {
+    margin-top: 25px;
+    width: 300px;
+    height: 45px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: transparent;
+    padding: 5px;
+}
+
+#login-page form input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+#login-page button {
+    width: 300px;
+    height: 45px;
+    margin: 10px 0px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+#login-page .reg {
+    width: 300px;
+}
+
+#login-page .reg p a {
+    text-decoration: none;
+    color: black;
+}
+
+#login-page .reg p a:hover {
+    font-weight: 600;
+}
+
+#login-page .reg a {
+    color: black;
+    text-decoration: none;
+}
+
+#login-page .reg a:hover {
+    font-weight: 600;
+}
+
+#signup-close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#signup-close:hover {
+    color: grey;
+}
+
+#signup-page {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 40px;
+    width: 500px;
+    height: 600px;
+}
+
+#signup-page .firstandlast {
+    display: flex;
+}
+
+#signup-page .firstandlast input {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#signup-page form input {
+    margin-top: 25px;
+    width: 410px;
+    height: 45px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: transparent;
+    padding: 5px;
+}
+
+#signup-page button {
+    width: 300px;
+    height: 45px;
+    margin: 10px 0px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+#signup-page h3,
+p {
+    color: black;
+}
+
+#signup-page .reg p a {
+    text-decoration: none;
+    color: black;
+}
+
+#signup-page .reg p a:hover {
+    font-weight: 600;
+}
+
+@media screen and (min-width:850px) and (max-width:1024px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    #hero {
+        height: 400px;
+    }
+
+    #hero .headings h1 {
+        font-size: 70px;
+    }
+
+    #hero .headings h5 {
+        font-size: 15px;
+    }
+
+    #Explore .title {
+        font-size: 30px;
+    }
+
+    footer .logo-about {
+        width: 20vw;
+    }
+
+    footer .columns {
+        margin-left: 10px;
+    }
+
+    footer .columns .column {
+        width: 130px;
+    }
+
+    footer .columns .column ul li {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    footer .columns .button-column button {
+        width: 60px;
+        height: 30px;
+    }
+
+    footer .columns .logo-column {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #hero {
+        height: 400px;
+    }
+
+    #hero .headings h1 {
+        font-size: 50px;
+    }
+
+    #hero .headings h5 {
+        font-size: 10px;
+    }
+
+    #hero .navigation {
+        padding: auto;
+    }
+
+    #hero .navigation button {
+        margin-left: 5px;
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #hero .navigation .navbar a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    #Explore .title {
+        font-size: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .logo-about p {
+        display: none;
+    }
+
+    footer .logo-about {
+        height: 7vh;
+    }
+
+    footer .columns {
+        margin-left: 20px;
+    }
+
+    footer .columns .column ul {
+        width: 100px;
+    }
+
+    footer .columns .column ul li {
+        font-size: 12px;
+    }
+
+    footer .columns .button-column button {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    footer .columns .logo-column {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+}
