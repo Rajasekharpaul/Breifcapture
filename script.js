@@ -189,5 +189,3 @@ let titles = [];
 for (let i = 0; i < alternate.length; i++) {
     titles.push(alternate[i].getAttribute('alt'));
 };
-
-console.log(title);
