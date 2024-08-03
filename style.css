@@ -218,13 +218,13 @@ body.dark-theme #lightIcon {
 
 #Explore .photogallery {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 #Explore .photogallery .column {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .photo {
@@ -235,6 +235,38 @@ body.dark-theme #lightIcon {
     width: 100%;
     height: 100%;
     border-radius: 6px;
+    object-fit: cover;
+}
+
+#mobile_explore {
+    display: none;
+    flex-direction: column;
+    max-width: 1500px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+#mobile_explore h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#mobile_explore .photogallery {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -628,4 +660,50 @@ p {
 
 #signup-page .reg p a:hover {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+    #hero {
+        max-width: 480px;
+        width: 100%;
+        height: 500px;
+    }
+
+    #hero .navigation {
+        display: none;
+    }
+
+    #hero .headings h1 {
+        font-size: 50px;
+    }
+
+    #hero .headings h5 {
+        font-size: 12px;
+    }
+
+    #Search .Search-box {
+        width: auto;
+        height: auto;
+    }
+
+    #Search .Search-box form input {
+        width: 400px;
+        height: 30px;
+    }
+
+    #Search .Search-box form button {
+        top: 10px;
+    }
+
+    #Explore {
+        display: none;
+    }
+
+    #mobile_explore {
+        display: flex;
+    }
+
+    footer .button-column {
+        display: none;
+    }
 }
